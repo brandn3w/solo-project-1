@@ -1,19 +1,5 @@
 /* stylelint-disable */
 
-body {
-  height: 100%;   
-  overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
-  margin: 0px;  /*removes default style*/
-  display: flex;  /*enables flex content for its children*/
-  box-sizing: border-box;
-}
-
-#page__container{
-  height: 100%;  /*allows both columns to span the full height of the browser window*/
-  display: flex;
-  flex-direction: column;
-}
-
 .top {
   &__navigation-wrapper {
     position: fixed;
@@ -26,6 +12,11 @@ body {
     display: flex;
     flex-direction: row;  
     justify-items: flex-end;
+    flex-shrink: 0;
+    display: inline-flex;
+    font-family: $paragraph-font;
+    color: $color-navbar-items;
+width: 85%;
       
   }
 

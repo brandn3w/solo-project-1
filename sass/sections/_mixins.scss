@@ -1,0 +1,21 @@
+
+@mixin orange-button {
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: $button-color;
+    color: $color-light;
+    cursor: pointer;
+  }
+  
+  @mixin orange-button-hover {
+    color: $color-dark;
+    background-color: $color-light;
+    transition: 0.3s;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+  }

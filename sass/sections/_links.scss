@@ -1,0 +1,62 @@
+
+/* stylelint-disable */
+
+.links__page-container{
+
+    width: 85%;
+}
+
+
+.page-add_new_btn {
+    left: 50%;
+    margin: 20px;
+  
+    .add-btn {
+   
+    width: 100px;
+    }
+  
+    .add-btn:hover {
+      
+    }
+  }
+  
+  .table-links {
+    font-weight: bold;
+    color: $color-navbar-items;
+    font-family: $paragraph-font;
+    border-collapse: collapse;
+    margin: auto;
+  
+    tr {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 2px $page-background;
+      cursor: pointer;
+  
+      td {
+        width: 320px;
+        padding: 10px 0;
+        margin-left: 10px;
+  
+        a {
+          text-decoration: none;
+          font-weight: normal;
+  
+        }
+      }
+      .links-icon {
+        width: auto;
+  
+        .icon-links {
+          color: $button-color;
+          margin-right: 20px;
+        }
+      }
+    }
+    tr:hover {
+      background-color: $page-background;
+    }
+  
+  }
+  

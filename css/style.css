@@ -340,15 +340,32 @@ template {
   display: none;
 }
 
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+#page__container {
+  width: 85%;
+}
+
+.page__all-container {
+  width: 85%;
+  right: 15%;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* stylelint-disable */
 .sidenav {
   height: 100%;
-  width: 240px;
+  width: 15%;
   position: fixed;
   z-index: 1;
   top: 0;
-  background-color: #111;
-  overflow-x: hidden;
+  background-color: #000000;
   padding-top: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -386,7 +403,7 @@ template {
 
 .navigation__item {
   font-size: 16px;
-  font-style: "Open Sans", Helvetica, Arial;
+  font-family: "Open Sans", Helvetica, Arial;
   margin-top: 29px;
 }
 
@@ -400,8 +417,8 @@ template {
 }
 
 .navigation__manager {
-  font-size: 16px;
-  font-style: "Open Sans", Helvetica, Arial;
+  font-size: 20px;
+  font-family: "Open Sans", Helvetica, Arial;
   color: #FFFFFF;
   margin-left: 25px;
   margin-top: 40px;
@@ -419,27 +436,6 @@ template {
 }
 
 /* stylelint-disable */
-body {
-  height: 100%;
-  overflow: hidden;
-  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
-  margin: 0px;
-  /*removes default style*/
-  display: -ms-flexbox;
-  display: flex;
-  /*enables flex content for its children*/
-  box-sizing: border-box;
-}
-
-#page__container {
-  height: 100%;
-  /*allows both columns to span the full height of the browser window*/
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-
 .top__navigation-wrapper {
   position: fixed;
   height: 50px;
@@ -454,6 +450,13 @@ body {
       flex-direction: row;
   -ms-grid-column-align: flex-end;
       justify-items: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #979797;
+  width: 85%;
 }
 
 .top__navigation-icon {
@@ -616,11 +619,57 @@ body {
 }
 
 /* stylelint-disable */
-main__page-container {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  /*ensures that the container will take up the full height of the parent container*/
-  overflow-y: auto;
-  /*adds scroll to this container*/
+.links__page-container {
+  width: 85%;
+}
+
+.page-add_new_btn {
+  left: 50%;
+  margin: 20px;
+}
+
+.page-add_new_btn .add-btn {
+  width: 100px;
+}
+
+.table-links {
+  font-weight: bold;
+  color: #979797;
+  font-family: "Open Sans", Helvetica, Arial;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.table-links tr {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: solid 2px #E3E3E3;
+  cursor: pointer;
+}
+
+.table-links tr td {
+  width: 320px;
+  padding: 10px 0;
+  margin-left: 10px;
+}
+
+.table-links tr td a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.table-links tr .links-icon {
+  width: auto;
+}
+
+.table-links tr .links-icon .icon-links {
+  color: #F58220;
+  margin-right: 20px;
+}
+
+.table-links tr:hover {
+  background-color: #E3E3E3;
 }
 /*# sourceMappingURL=style.css.map */
