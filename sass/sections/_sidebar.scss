@@ -9,6 +9,7 @@
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+  flex-shrink: 0;
 }
 
 .logo-header {
@@ -17,8 +18,8 @@
   font-size: 25px;
   margin-left: 25px;
 
-i.fas.fa-bars {
-  font-family: $logo-font;
+i.fas.fa-bars#hamburger {
+  font-family: $paragraph-font;
   color: $color-light;
   font-size: 25px;
   margin-left: 25px;
@@ -34,7 +35,7 @@ i.fas.fa-bars {
   &__header__wrapper {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+ 
   }
 
 &__list {
@@ -55,4 +56,24 @@ i.fas.fa-bars {
     margin-right: 10px;
   }
 }
+
+&__manager{
+ 
+  font-size: $paragraph-font-size;
+  font-style: $paragraph-font;
+  color: $color-light;
+  margin-left: 25px;
+  margin-top: 40px;
 }
+
+img {
+  display: inline-block;
+  width: 55px;
+  border-radius: 100%;
+  object-fit: cover;
+  height: 55px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+}
+

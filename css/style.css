@@ -350,6 +350,8 @@ template {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .logo-header {
@@ -359,8 +361,8 @@ template {
   margin-left: 25px;
 }
 
-.logo-header i.fas.fa-bars {
-  font-family: "Satisfy", cursive;
+.logo-header i.fas.fa-bars#hamburger {
+  font-family: "Open Sans", Helvetica, Arial;
   color: #FFFFFF;
   font-size: 25px;
   margin-left: 25px;
@@ -375,8 +377,6 @@ template {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-align: baseline;
-      align-items: baseline;
 }
 
 .navigation__list {
@@ -399,10 +399,49 @@ template {
   margin-right: 10px;
 }
 
+.navigation__manager {
+  font-size: 16px;
+  font-style: "Open Sans", Helvetica, Arial;
+  color: #FFFFFF;
+  margin-left: 25px;
+  margin-top: 40px;
+}
+
+.navigation img {
+  display: inline-block;
+  width: 55px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 55px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
 /* stylelint-disable */
+body {
+  height: 100%;
+  overflow: hidden;
+  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+  margin: 0px;
+  /*removes default style*/
+  display: -ms-flexbox;
+  display: flex;
+  /*enables flex content for its children*/
+  box-sizing: border-box;
+}
+
+#page__container {
+  height: 100%;
+  /*allows both columns to span the full height of the browser window*/
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
 .top__navigation-wrapper {
   position: fixed;
-  width: calc(100% - 240px);
   height: 50px;
   top: 0;
   right: 0;
@@ -413,6 +452,8 @@ template {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  -ms-grid-column-align: flex-end;
+      justify-items: flex-end;
 }
 
 .top__navigation-icon {
@@ -425,13 +466,12 @@ template {
   border-style: solid;
   border-width: 0 0.5px 0 0.5px;
   border-color: #E3E3E3;
+  margin: 0 20px;
 }
 
 .top__menu {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
   width: auto;
 }
 
@@ -573,5 +613,14 @@ template {
 
 .icon-wallet:before {
   content: '\0062';
+}
+
+/* stylelint-disable */
+main__page-container {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  /*ensures that the container will take up the full height of the parent container*/
+  overflow-y: auto;
+  /*adds scroll to this container*/
 }
 /*# sourceMappingURL=style.css.map */
