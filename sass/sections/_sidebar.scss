@@ -19,8 +19,8 @@
   padding: 0;
   width: fit-content;
 
-
- .fas {
+}
+i.fas.fa-bars.hamburger {
   font-family: $paragraph-font;
   color: $color-navbar-items;
   font-size: 40px;
@@ -29,16 +29,13 @@
   flex: 0 50%
 }
 
-
-}
-
 .navigation {
 
   &__navmenu-wrapper {
     margin-left: 25px;
   }
   &__header__wrapper {
-    display: inline-block;
+    align-items: baseline;
     flex-direction: row;
    width: 100%;
  
