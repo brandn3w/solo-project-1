@@ -1,62 +1,98 @@
-
 /* stylelint-disable */
 
-.links__page-container{
-
-    width: 85%;
+.links__page-container {
+  width: 100%;
+  display: flex;
+  margin: 18px;
+  background-color: $color-light;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 
-
 .page-add_new_btn {
-    left: 50%;
-    margin: 20px;
+
+  margin: 22px auto;
   
-    .add-btn {
-   
-    width: 100px;
+
+  .add-btn {
+    width: 125px;
+    margin: 0 auto;
+    background-color: $button-color;
+    border: none;
+    border-radius: 5%;
+    font-family: $brand-font;
+    color: $color-light;
+    padding: 10px 20px;
+    
+
+  }
+  .add-btn:hover {
+  }
+}
+
+.tbody{
+  margin: auto;
+}
+
+.table-links {
+  display: flex;
+  font-weight: bold;
+  color: $color-navbar-items;
+  font-family: $paragraph-font;
+  border-collapse: collapse;
+  margin: auto;
+
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px $page-background;
+    cursor: pointer;
+
+    td {
+      width: 320px;
+      padding: 10px 0;
+      margin-left: 10px;
+
+      a {
+        text-decoration: none;
+        font-weight: normal;
+      }
     }
-  
-    .add-btn:hover {
-      
+    .links-icon {
+      width: auto;
+
+      .icon-links {
+        color: $button-color;
+        margin-right: 20px;
+      }
     }
   }
-  
-  .table-links {
-    font-weight: bold;
-    color: $color-navbar-items;
-    font-family: $paragraph-font;
-    border-collapse: collapse;
-    margin: auto;
-  
-    tr {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: solid 2px $page-background;
-      cursor: pointer;
-  
-      td {
-        width: 320px;
-        padding: 10px 0;
-        margin-left: 10px;
-  
-        a {
-          text-decoration: none;
-          font-weight: normal;
-  
-        }
-      }
-      .links-icon {
-        width: auto;
-  
-        .icon-links {
-          color: $button-color;
-          margin-right: 20px;
-        }
-      }
-    }
-    tr:hover {
-      background-color: $page-background;
-    }
-  
+  tr:hover {
+    background-color: $page-background;
   }
-  
+}
+
+@media (max-width: 767px) {
+
+  .tbody {
+    display: flex;
+    flex-direction: column;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

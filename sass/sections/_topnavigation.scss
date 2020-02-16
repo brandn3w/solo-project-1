@@ -24,9 +24,6 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-        margin: 0 20px;
-
-   
 
   }
 
@@ -39,13 +36,15 @@
   &__menu-icon {
     display: flex;
     align-items: baseline;
-    border-left: 1px solid $page-background;
-    padding: 10px 20px 0 20px;
+    margin: 0;
+ 
   }
 }
 #wallet, #user {
   border-style: solid;
   border-width: 0 0.5px 0 0.5px;
   border-color: $page-background;
+  border-left: 1px solid $page-background;
+  padding: 10px 20px 0 20px;
  }
 
