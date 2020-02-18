@@ -1,20 +1,59 @@
 
 
 .general__container{
+    
 display: flex;
 flex-direction: column;
 background-color: $color-light;
-margin: 9px 18px;
+margin-top: 59px;
+margin-left: 18px;
+margin-right: 18px;
+margin-bottom: 9px;
 justify-content: center;
 align-items: center;
+
+
+
+table {
+    border-spacing: 25px;
+    margin: 0 auto;
+    width: 70%;
+
+    tr {
+      td {
+        position: relative;
+        padding: 0;
+        border-bottom: 0.5px solid $page-background;
+        width: auto;
+
+        h3, p {
+          display: inline;
+          font-family: $paragraph-font;
+          color: $color-navbar-items;
+        }
+        p {
+          position: absolute;
+          right: 0;
+          margin: 0;
+        }
+    }
+}
+}
+}
+.reload-btn {
+
+    width: 40px;
+    margin: 0 auto;
+    background-color: $button-color;
+    border: none;
+    border-radius: 5%;
+    font-family: $brand-font;
+    color: $color-light;
+    cursor: pointer;
+    padding: 10px;
 }
 
-.deposit, .FTD, .signups, .turnover{
-    display: inline-flex;
-    flex-direction: row;
-    border-bottom: 0.5px solid;
-    border-color: $color-navbar-items;
-    
+.icon-refresh {
+    text-align: center;
+    margin: 0;
 }
-
-

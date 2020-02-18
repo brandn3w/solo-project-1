@@ -16,7 +16,7 @@
           <h1 class="logo-header">Just do it</h1>
        <i class ="fas fa-bars hamburger"></i>
         </div>
-        <div class="navigation__navmenu-wrapper">
+        <div class="navigation__navmenu-wrapper mobile-menu">
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a href ="#General">  <i class="icon-general"></i> General</a>
@@ -42,7 +42,7 @@
             </ul>
         </div>
         <div class="navigation__manager">
-            <p class="manager-name">Your manager</p>            
+            <p class="manager__name">Your manager</p>            
          <a href="#chat">
             <div class="manager__info">
               <img src="images/manager.png" alt="manager face">
@@ -87,7 +87,7 @@
       <i class="icon-refresh"></i>
     </button>
         </div>
-        <div class="chart-wrapper">
+        
         <table>
            <tr>
 <td class="signups">
@@ -104,16 +104,21 @@
     <h3>FTD</h3>
     <p>445</p>
 </td>
-<td class="turn">
+<td class="turnover">
 <h3>Turn over</h3>
 <p>435</p>
 </td>
 </tr>
 </table>
+<div>
+</div>
+
+<div class ="chart-wrapper">
+  <canvas id="myChart"></canvas>
 </div>
 </div>
 
-      <div class="links__page-container">
+<div class="links__page-container">
         
    <div class="page-header">
     <h2 class="page-title">Links</h2>
@@ -212,6 +217,8 @@
 </div>
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
 

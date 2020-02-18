@@ -21,7 +21,7 @@
 
 }
 
-i.fas.fa-bars.hamburger {
+i.fa-bars{
   font-family: $paragraph-font;
   color: $color-navbar-items;
   font-size: 40px;
@@ -49,7 +49,9 @@ i.fas.fa-bars.hamburger {
 &__item {
   font-size: $paragraph-font-size;
   font-family: $paragraph-font;
-  margin-top: 29px;
+  color: $color-navbar-items;
+  padding: 14px;
+  cursor: pointer;
 
   a {
     text-decoration: none;
@@ -77,6 +79,17 @@ i.fas.fa-bars.hamburger {
 
 }
 
+.navigation__item:hover {
+  border-left: 4px solid orange;
+  color: $color-light;
+  background-color: $hover-color;
+} 
+
+.navigation__item.active {
+  border-left: 4px solid orange;
+}
+
+
 img {
   display: inline-block;
   width: 55px;
@@ -86,7 +99,7 @@ img {
   margin: 25px 15px;
 }
 
-.manager-name {
+.manager__name {
   font-size: 15px;
   color: $color-navbar-items;
   text-transform: uppercase;
@@ -97,5 +110,6 @@ img {
   text-decoration: none;
   color: $name-color;
   display: inline-flex;
+  align-items: center;
 
   }
