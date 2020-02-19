@@ -1,7 +1,18 @@
+
+
 @media screen and (max-width: 767px) {
 
   .sidenav {
     display: none;
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+    transition: 300ms ease all;
+  }
+
+  .sidenav.active {
+    transform: translateX(300px);
+    transform: translate3d(300px, 0, 0);
+
   }
 
   .manager__info {

@@ -457,11 +457,13 @@ i.fa-bars {
   color: #FFFFFF;
   text-align: left;
   margin-top: 40px;
-  margin-left: 25px;
+  padding-left: 25px;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  width: 100%;
+  border-top: 0.5px solid #979797;
 }
 
 .navigation__item:hover {
@@ -884,9 +886,38 @@ p.user {
   margin: 0;
 }
 
+.chart__wrapper {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.chart__wrapper canvas {
+  max-width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.chart__wrapper h3 {
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #979797;
+}
+
 @media screen and (max-width: 767px) {
   .sidenav {
     display: none;
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+    transition: 300ms ease all;
+  }
+  .sidenav.active {
+    transform: translateX(300px);
+    transform: translate3d(300px, 0, 0);
   }
   .manager__info {
     -ms-flex-direction: column;

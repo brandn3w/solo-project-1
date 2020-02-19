@@ -26,6 +26,7 @@ i.fa-bars {
   margin-left: 25px;
   line-height: 1;
   z-index: 1;
+
   cursor: pointer;
 }
 
@@ -66,9 +67,11 @@ i.fa-bars {
     color: $color-light;
     text-align: left;
     margin-top: 40px;
-    margin-left: 25px;
+    padding-left: 25px;
     display: inline-flex;
     flex-direction: column;
+    width: 100%;
+    border-top: 0.5px solid $color-navbar-items;
   }
 }
 
@@ -110,11 +113,3 @@ img {
 
 
 
-// @media (min-width: 768px) {
-// }
-
-// @media (min-width: 992px) {
-// }
-
-// @media (min-width: 1200px) {
-// }

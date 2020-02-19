@@ -91,3 +91,23 @@ border-bottom: 0.5px solid $color-navbar-items;
     text-align: center;
     margin: 0;
 }
+
+.chart__wrapper{
+  width: 100%;
+  display: flex;
+ justify-content: center;
+ flex-direction: column;
+
+ canvas{
+   max-width: 50%;
+   align-self: center;
+ }
+ 
+
+  h3 {
+   
+    font-family: $paragraph-font;
+    color: $color-navbar-items;
+  }
+
+}
