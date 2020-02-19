@@ -1,5 +1,5 @@
 
-const mobileMenu = document.querySelector('.navigation__navmenu-wrapper');
+const mobileMenu = document.querySelector('.mobile-menu');
 const hamburger = document.querySelector('.hamburger');
 
 function toggleMenu(visible){

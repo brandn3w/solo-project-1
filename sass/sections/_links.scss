@@ -1,7 +1,7 @@
 /* stylelint-disable */
 
 .links__page-container {
-  width: 100%;
+ 
   display: flex;
   margin: 9px 18px;
   background-color: $color-light;
@@ -10,21 +10,8 @@
   align-items: center;
 }
 
-.page-header{
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  border-bottom: solid 0.5px $color-navbar-items;
-margin-bottom: 15px;
-.page-title {
-margin: 10px;
-text-transform: uppercase;
-font-family: $paragraph-font;
-color: $color-navbar-items;
-font-size: $paragraph-font-size;
 
-}
-}
+
 
 .page-add_new_btn {
 

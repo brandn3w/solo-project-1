@@ -12,9 +12,43 @@ margin-bottom: 9px;
 justify-content: center;
 align-items: center;
 
+.date-period-wrapper{
+display: inline-flex;
+margin: 40px auto;
+border-bottom: 0.5px solid $color-navbar-items;
 
+}
 
-table {
+.page-dates {
+  display: flex;
+  padding: 35px;
+  border-bottom: 1px solid $page-background;
+}
+
+.page-dates {
+  height: 40px;
+  border: 1px solid $page-background;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-content: center;
+
+  .date-row{
+    .date {
+      align-content: center;
+      padding-left: 20px;
+      padding-right: 40px;
+      border-right: 1px solid $page-background;
+      font-family: $paragraph-font;
+          }
+
+    .icon {
+      color: $page-background;
+    }
+  }
+}
+
+.table-stats {
     border-spacing: 25px;
     margin: 0 auto;
     width: 70%;
