@@ -11,6 +11,16 @@ hamburger.addEventListener('click', function(){
    toggleMenu()
 });
 
+//datepicker
+
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+
 //chart
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -40,3 +50,4 @@ var chart = new Chart(ctx, {
     }]
   },
 });
+

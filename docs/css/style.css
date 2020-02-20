@@ -388,7 +388,6 @@ body {
   height: 100%;
   width: 15%;
   position: fixed;
-  z-index: 1;
   top: 0;
   background-color: #000000;
   padding-top: 20px;
@@ -407,13 +406,13 @@ body {
   width: fit-content;
 }
 
-i.fa-bars {
+.hamburger {
   font-family: "Open Sans", Helvetica, Arial;
   color: #979797;
   font-size: 40px;
   margin-left: 25px;
   line-height: 1;
-  z-index: 1;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -422,8 +421,8 @@ i.fa-bars {
 }
 
 .navigation__header__wrapper {
-  -ms-flex-align: baseline;
-      align-items: baseline;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-direction: row;
       flex-direction: row;
   width: 100%;
@@ -813,57 +812,36 @@ p.user {
   border-bottom: 0.5px solid #979797;
 }
 
-.general__container .page-dates {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 35px;
-  border-bottom: 1px solid #E3E3E3;
-}
-
-.general__container .page-dates {
-  height: 40px;
-  border: 1px solid #E3E3E3;
-  padding: 5px;
-  border-radius: 3px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.general__container .page-dates .date-row .date {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-left: 20px;
-  padding-right: 40px;
-  border-right: 1px solid #E3E3E3;
+.general__container input {
   font-family: "Open Sans", Helvetica, Arial;
+  color: #979797;
+  font-size: 14px;
+  text-align: center;
+  width: 170px;
+  border: 0.5px solid #979797;
 }
 
-.general__container .page-dates .date-row .icon {
-  color: #E3E3E3;
-}
-
-.general__container .table-stats {
+.table-stats {
   border-spacing: 25px;
   margin: 0 auto;
   width: 70%;
 }
 
-.general__container .table-stats tr td {
+.table-stats tr td {
   position: relative;
   padding: 0;
   border-bottom: 0.5px solid #E3E3E3;
   width: auto;
 }
 
-.general__container .table-stats tr td h3, .general__container .table-stats tr td p {
+.table-stats tr td h3,
+.table-stats tr td p {
   display: inline;
   font-family: "Open Sans", Helvetica, Arial;
   color: #979797;
 }
 
-.general__container .table-stats tr td p {
+.table-stats tr td p {
   position: absolute;
   right: 0;
   margin: 0;
@@ -881,7 +859,11 @@ p.user {
   padding: 10px;
 }
 
-.icon-refresh {
+.reload-btn .reload-btn:hover {
+  background-color: #231f1f;
+}
+
+.reload-btn .icon-refresh {
   text-align: center;
   margin: 0;
 }
@@ -892,6 +874,26 @@ p.user {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.chart__wrapper canvas {
+  max-width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.chart__wrapper h3 {
+  width: 67%;
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 15px;
+  color: #979797;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 50px auto;
 }
 
 @media screen and (max-width: 767px) {
