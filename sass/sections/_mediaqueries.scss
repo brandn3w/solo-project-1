@@ -12,7 +12,6 @@
   .sidenav.active {
     transform: translateX(300px);
     transform: translate3d(300px, 0, 0);
-
   }
 
   .manager__info {
@@ -29,6 +28,14 @@
   }
 }
 
+.mobile__container{
+display: flex;
+width: 100%
+}
+
+#wallet.top__navigation-icon, i.icon-notification, i.icon-quit{
+  display: none;
+}
 @media (min-width: 768px) {
 
 

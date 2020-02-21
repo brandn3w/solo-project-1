@@ -2,51 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Just do it</title>    
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
- <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just do it</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
-<body>
+  <body>
     <section class="sidebar">
       <div class="sidenav">
-          <div class="navigation__header__wrapper">
+        <div class="navigation__header__wrapper">
           <h1 class="logo-header">Just do it</h1>
-          <i  class="fal fa-bars hamburger"></i>
+          <i class="fal fa-bars hamburger"></i>
         </div>
         <div class="navigation__navmenu-wrapper ">
-            <ul class="navigation__list mobile-menu">
-                <li class="navigation__item">
-                    <a href ="#General">  <i class="icon-general"></i> General</a>
-                </li>
-                <li class="navigation__item">
-                    <a href ="#Details"><i class="icon-details"></i> Details</a>
-                </li>
-                <li class="navigation__item">
-                    <a href ="#Links"><i class="icon-links"></i> Links</a>
-                </li>
-                <li class="navigation__item">
-                    <a href ="#Banners"><i class="icon-links"></i> Banners</a>
-                </li>
-                <li class="navigation__item">
-                    <a href ="#Personal-data"><i class="icon-personaldata"></i> Personal Data</a>
-                </li>
-                <li class="navigation__item">
-                    <a href ="#Payout"><i class="icon-payout"></i> Payout</a>
-                </li>
-                <li class="navigation__item">
-                    <a href ="#Postback"> <i class="icon-postback"></i> Postback</a>
-                </li>
-            </ul>
+          <ul class="navigation__list mobile-menu">
+            <li class="navigation__item">
+              <a href="#General"> <i class="icon-general"></i> General</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#Details"><i class="icon-details"></i> Details</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#Links"><i class="icon-links"></i> Links</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#Banners"><i class="icon-links"></i> Banners</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#Personal-data"
+                ><i class="icon-personaldata"></i> Personal Data</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#Payout"><i class="icon-payout"></i> Payout</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#Postback"> <i class="icon-postback"></i> Postback</a>
+            </li>
+          </ul>
         </div>
         <div class="navigation__manager">
-            <p class="manager__name">Your manager</p>            
-         <a href="#chat">
+          <p class="manager__name">Your manager</p>
+          <a href="#chat">
             <div class="manager__info">
-              <img src="images/manager.png" alt="manager face">
+              <img src="images/manager.png" alt="manager face" />
               <p>Mikhael E.</p>
             </div>
           </a>
@@ -54,179 +70,190 @@
       </div>
     </section>
 
-
     <section id="page-container">
       <div class="page__all-container">
         <div class="top__navigation-wrapper">
-            <div class="top__menu">
+          <div class="top__menu">
             <div id="wallet" class="top__navigation-icon ">
-       <i class="icon-wallet"></i>
-       <h3 class="wallet">$1,500.00</h3>
-       <i class="icon-arrow-down-small"></i>
+              <i class="icon-wallet"></i>
+              <h3 class="wallet">$1,500.00</h3>
+              <i class="icon-arrow-down-small"></i>
+            </div>
+            <div class="top__navigation-icon">
+              <i class="icon-notification"></i>
+            </div>
+
+            <div id="user" class="top__navigation-icon">
+              <i class="icon-profile"></i>
+              <p class="user">Leonardo Dicaprio</p>
+            </div>
+            <div class="top__navigation-icon">
+              <a href="#logout">
+                <i class="icon-quit"></i>
+              </a>
+            </div>
           </div>
-<div class="top__navigation-icon">
-    <i class="icon-notification"></i>
-</div>
-<div id = "user" class="top__navigation-icon">
-    <i class="icon-profile"></i>
-    <p class="user">Leonardo Dicaprio</p>
-</div>
-<div class="top__navigation-icon">
-    <a href="#logout">
-<i class="icon-quit"></i>
-</a>
-</div>
-     </div>
         </div>
-      <div class="general__container">        
-   <div class="page-header">
-    <h2 class="page-title">General Statistics</h2>
-  </div>
+        <div class="general__container">
+          <div class="page-header">
+            <h2 class="page-title">General Statistics</h2>
+          </div>
 
-        <div class="date-period-wrapper"> 
-        
-              <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
-                      
-     <button class="reload-btn">
-      <i class="icon-refresh"></i>
-    </button>
+          <div class="date-period-wrapper">
+            <input
+              type="text"
+              name="daterange"
+              value="01/01/2018 - 01/15/2018"
+            />
+
+            <button class="reload-btn">
+              <i class="icon-refresh"></i>
+            </button>
+          </div>
+
+          <table class="table-stats">
+            <tr>
+              <td class="signups">
+                <h3>Visit signups</h3>
+                <p>124</p>
+              </td>
+              <td class="deposit">
+                <h3>Net deposit</h3>
+                <p>564</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="FTD">
+                <h3>FTD</h3>
+                <p>445</p>
+              </td>
+              <td class="turnover">
+                <h3>Turn over</h3>
+                <p>435</p>
+              </td>
+            </tr>
+          </table>
+
+          <div></div>
+
+          <div class="chart__wrapper">
+            <h3>Earnings chart</h3>
+            <canvas id="myChart"></canvas>
+          </div>
         </div>
-        
-        <table class="table-stats">
-           <tr>
-<td class="signups">
- <h3>Visit signups</h3>
- <p>124</p>
- </td>
-<td class="deposit">
-<h3>Net deposit</h3>
-<p>564</p>
- </td>
-</tr>
-<tr>
-  <td class="FTD">
-    <h3>FTD</h3>
-    <p>445</p>
-</td>
-<td class="turnover">
-<h3>Turn over</h3>
-<p>435</p>
-</td>
-</tr>
-</table>
-<div>
-</div>
 
-<div class ="chart__wrapper">
-  <h3>Earnings chart </h3>
-  <canvas id="myChart"></canvas>
-</div>
-</div>
+        <div class="links__page-container">
+          <div class="page-header">
+            <h2 class="page-title">Links</h2>
+          </div>
+          <div class="page-add_new_btn">
+            <button class="add-btn">+ add new</button>
+          </div>
 
-<div class="links__page-container">
-        
-   <div class="page-header">
-    <h2 class="page-title">Links</h2>
-  </div>
- <div class="page-add_new_btn">
-<button class="add-btn">+ add new</button>
-</div>
-
-<div class="page_links-list">
-  <table class="table-links">
-    <tr>
-      <td>Home page</td>
-      <td><a href="#">http://www.homepage.com</a></td>
-      <td class="links-icon">
-        <i class="icon-links"></i>
-        <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Currently Offer</td>
-      <td><a href="#">http://www.currently.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-        </td>
-    </tr>
-    <tr>
-      <td>Blurpix</td>
-      <td><a href="#">http://www.blurpix.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Your Site</td>
-      <td><a href="#">http://www.yoursite.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Google</td>
-      <td><a href="#">http://www.google.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Facebook</td>
-      <td><a href="#">http://www.facebook.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Dashboard</td>
-      <td><a href="#">http://www.dashboard.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Blurax</td>
-      <td><a href="#">http://www.blurax.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Piece of wine</td>
-      <td><a href="#">http://www.pieceofwine.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Twitter</td>
-      <td><a href="#">http://www.twitter.com</a></td>
-      <td class="links-icon">
-          <i class="icon-links"></i>
-          <i class="icon-trash"></i>
-      </td>
-    </tr>
-  </table>
-</div>
-<div class="page-add_new_btn">
-  <button class="add-btn">+ add new</button>
-</div>
-</div>
+          <div class="page_links-list">
+            <table class="table-links">
+              <tr>
+                <td>Home page</td>
+                <td><a href="#">http://www.homepage.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Currently Offer</td>
+                <td><a href="#">http://www.currently.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Blurpix</td>
+                <td><a href="#">http://www.blurpix.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Your Site</td>
+                <td><a href="#">http://www.yoursite.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                <td><a href="#">http://www.google.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+                <td><a href="#">http://www.facebook.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Dashboard</td>
+                <td><a href="#">http://www.dashboard.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Blurax</td>
+                <td><a href="#">http://www.blurax.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Piece of wine</td>
+                <td><a href="#">http://www.pieceofwine.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Twitter</td>
+                <td><a href="#">http://www.twitter.com</a></td>
+                <td class="links-icon">
+                  <i class="icon-links"></i>
+                  <i class="icon-trash"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="page-add_new_btn">
+            <button class="add-btn">+ add new</button>
+          </div>
+        </div>
       </div>
     </section>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
-

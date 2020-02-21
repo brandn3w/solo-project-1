@@ -3,7 +3,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const hamburger = document.querySelector('.hamburger');
 
 function toggleMenu(visible){
-document.querySelector('.mobile-menu').classList.toggle('show', visible)
+document.querySelector('.mobile-menu').classList.toggle('active', visible)
 }
 
 hamburger.addEventListener('click', function(){

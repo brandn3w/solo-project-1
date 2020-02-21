@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just do it</title>
     <link
       rel="stylesheet"
@@ -28,7 +29,11 @@
       <div class="sidenav">
         <div class="navigation__header__wrapper">
           <h1 class="logo-header">Just do it</h1>
-          <i class="fal fa-bars hamburger"></i>
+          <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
         <div class="navigation__navmenu-wrapper ">
           <ul class="navigation__list mobile-menu">
@@ -72,6 +77,17 @@
     <section id="page-container">
       <div class="page__all-container">
         <div class="top__navigation-wrapper">
+          <div class="mobile__container">
+            <div class="mobile__logo">
+              <h1 class="logo-header">Just do it</h1>
+            </div>
+            <div class="mobile__hamburger">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+
           <div class="top__menu">
             <div id="wallet" class="top__navigation-icon ">
               <i class="icon-wallet"></i>
@@ -81,6 +97,7 @@
             <div class="top__navigation-icon">
               <i class="icon-notification"></i>
             </div>
+
             <div id="user" class="top__navigation-icon">
               <i class="icon-profile"></i>
               <p class="user">Leonardo Dicaprio</p>
@@ -239,22 +256,6 @@
       </div>
     </section>
 
-    <section id="modal">
-      <div class="bg-modal">    
-     
-          <div class="modal-contents">     
-            <div class="login">
-              <h3>login</h3>
-            </div>       
-          <form action="">
-            <input type="login name" placeholder="login name" />
-            <input class="password" type="password" placeholder="password" />
-           <i  class="icon-password"></i>
-            <button class="enter-btn">Enter</button>
-          </form>
-        </div>
-      </div>
-    </section>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"

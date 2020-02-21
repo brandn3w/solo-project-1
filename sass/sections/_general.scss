@@ -63,14 +63,14 @@
   cursor: pointer;
   padding: 10px;
 
-  .reload-btn:hover {
-    background-color: $hover-color;
-  }
-
   .icon-refresh {
     text-align: center;
     margin: 0;
   }
+}
+
+.reload-btn:hover {
+  background-color: $hover-color;
 }
 
 .chart__wrapper {
