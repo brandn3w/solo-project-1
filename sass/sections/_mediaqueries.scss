@@ -2,6 +2,54 @@
 
 @media screen and (max-width: 767px) {
 
+  #page-container{
+
+    width: 100%;
+  }
+
+  .general__container {
+    align-self: center;
+    margin: 59px 0;
+    width: 100%;
+    overflow: hidden;
+    
+   }
+
+   .page{
+    &__all-container{
+    width:100%;
+    margin: 0;
+    }
+    }
+
+
+table.table-stats {
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+.chart__wrapper {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  
+
+  canvas {
+    max-width: 50%;
+    height: 100%;
+    
+  }
+
+  h3 {
+    width: 67%;
+    font-family: $paragraph-font;
+    font-size: 12px;
+    color: $color-navbar-items;
+    align-self: center;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
   .sidenav {
     display: none;
     transform: translateX(0);
@@ -26,15 +74,80 @@
     display: flex;
     flex-direction: column;
   }
-}
 
-.mobile__container{
-display: flex;
-width: 100%
-}
 
+.mobile {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+
+  }
+  &__logo{
+   width: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: $color-dark;
+   
+
+    h1.logo-header{
+      font-family: $logo-font;
+      color: $color-dark;
+      font-size: 17px;
+      
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &__hamburger {
+    display: inline-block;
+    cursor: pointer;
+ 
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 20px;
+      height: 2px;
+      background-color: $color-dark;
+      z-index: 1;
+      margin: 4px;
+    }
+  }
+}
+.hamburger:hover {
+  background-color: $color-navbar-items;
+}
 #wallet.top__navigation-icon, i.icon-notification, i.icon-quit{
   display: none;
+ 
+}
+
+.top{
+
+  &__navigation-wrapper{
+  width: 100%;
+  justify-content: start;
+  flex-direction: row;
+ 
+  }
+  &__navigation-icon{
+    font-size: 12px;
+    
+  }
+}
+
+#user{
+  border: none;
+}
+
+.links__page-container {
+
+  font-size: 12px;
+  text-align: center;
+
 }
 @media (min-width: 768px) {
 
@@ -45,4 +158,5 @@ width: 100%
 }
 
 @media (min-width: 1200px) {
+}
 }

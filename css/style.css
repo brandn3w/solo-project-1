@@ -422,6 +422,10 @@ body {
   margin: 5px;
 }
 
+.hamburger:hover {
+  background-color: #FFFFFF;
+}
+
 .navigation__navmenu-wrapper {
   margin-left: 0;
 }
@@ -557,7 +561,8 @@ img {
       align-items: baseline;
 }
 
-#wallet, #user {
+#wallet,
+#user {
   border-style: solid;
   border-width: 0 0.5px 0 0.5px;
   border-color: #E3E3E3;
@@ -581,27 +586,32 @@ i {
       justify-content: flex-start;
   top: 0;
   left: 0;
+  display: none;
 }
 
 .mobile__logo {
   font-family: "Satisfy", cursive;
   color: #171717;
-  font-size: 20px;
+  font-size: 18px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.hamburger {
+.mobile__hamburger {
   display: inline-block;
   cursor: pointer;
   margin-left: 40px;
   margin-bottom: 5px;
 }
 
-.hamburger .bar1, .hamburger .bar2, .hamburger .bar3 {
-  width: 25px;
-  height: 3px;
+.mobile__hamburger .bar1,
+.mobile__hamburger .bar2,
+.mobile__hamburger .bar3 {
+  width: 20px;
+  height: 2px;
   background-color: #171717;
   z-index: 1;
-  margin: 5px;
+  margin: 4px;
 }
 
 .hamburger:hover {
@@ -769,7 +779,7 @@ i {
 }
 
 .page-add_new_btn .add-btn:hover {
-  background-color: #171717;
+  background-color: #231f1f;
 }
 
 .tbody {
@@ -817,21 +827,6 @@ i {
 
 .table-links tr:hover {
   background-color: #E3E3E3;
-}
-
-@media (max-width: 767px) {
-  .tbody {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  tr {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
 }
 
 .general__container {
@@ -942,6 +937,46 @@ i {
 }
 
 @media screen and (max-width: 767px) {
+  #page-container {
+    width: 100%;
+  }
+  .general__container {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 59px 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .page__all-container {
+    width: 100%;
+    margin: 0;
+  }
+  table.table-stats {
+    margin: 20px 0;
+    font-size: 12px;
+  }
+  .chart__wrapper {
+    width: 50%;
+    height: 50%;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .chart__wrapper canvas {
+    max-width: 50%;
+    height: 100%;
+  }
+  .chart__wrapper h3 {
+    width: 67%;
+    font-family: "Open Sans", Helvetica, Arial;
+    font-size: 12px;
+    color: #979797;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 20px auto;
+    text-align: center;
+  }
   .sidenav {
     display: none;
     transform: translateX(0);
@@ -968,15 +1003,64 @@ i {
     -ms-flex-direction: column;
         flex-direction: column;
   }
-}
-
-.mobile__container {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-#wallet.top__navigation-icon, i.icon-notification, i.icon-quit {
-  display: none;
+  .mobile__container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    top: 0;
+    left: 0;
+  }
+  .mobile__logo {
+    width: 100%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+        align-items: center;
+    color: #171717;
+  }
+  .mobile__logo h1.logo-header {
+    font-family: "Satisfy", cursive;
+    color: #171717;
+    font-size: 17px;
+    width: 100%;
+    z-index: 1;
+  }
+  .mobile__hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .mobile__hamburger .bar1,
+  .mobile__hamburger .bar2,
+  .mobile__hamburger .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #171717;
+    z-index: 1;
+    margin: 4px;
+  }
+  .hamburger:hover {
+    background-color: #979797;
+  }
+  #wallet.top__navigation-icon, i.icon-notification, i.icon-quit {
+    display: none;
+  }
+  .top__navigation-wrapper {
+    width: 100%;
+    -ms-flex-pack: start;
+        justify-content: start;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .top__navigation-icon {
+    font-size: 12px;
+  }
+  #user {
+    border: none;
+  }
+  .links__page-container {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

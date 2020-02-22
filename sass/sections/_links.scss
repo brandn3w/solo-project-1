@@ -31,7 +31,7 @@
 
   }
   .add-btn:hover {
-    background-color: $color-dark;
+    background-color: $hover-color;
   }
 }
 
@@ -78,25 +78,3 @@
   }
 }
 
-@media (max-width: 767px) {
-
-  .tbody {
-    display: flex;
-    flex-direction: column;
-  }
-  tr {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) {
-
-
-}
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}

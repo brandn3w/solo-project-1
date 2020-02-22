@@ -34,6 +34,9 @@
 }
 }
 
+.hamburger:hover{
+  background-color: $color-light;
+}
 .navigation {
   &__navmenu-wrapper {
     margin-left: 0;
