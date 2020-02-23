@@ -1,14 +1,15 @@
 
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('.sidenav');
+const hamburgerMobile = document.querySelector('.mobile__hamburger');
 const hamburger = document.querySelector('.hamburger');
 
-function toggleMenu(visible){
-document.querySelector('.mobile-menu').classList.toggle('active', visible)
-}
+
+hamburgerMobile.addEventListener('click', function(){
+   mobileMenu.classList.toggle('active');
+});
 
 hamburger.addEventListener('click', function(){
-    event.preventDefault();
-   toggleMenu()
+  mobileMenu.classList.toggle('active');
 });
 
 //datepicker
