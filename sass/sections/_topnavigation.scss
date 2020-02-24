@@ -17,6 +17,7 @@
     font-family: $paragraph-font;
     color: $color-navbar-items;
     width: 85%;
+    z-index: 1;
   }
 
   &__navigation-icon {
