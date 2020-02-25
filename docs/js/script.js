@@ -50,5 +50,9 @@ var chart = new Chart(ctx, {
       hidden: true,
     }]
   },
+  options: {
+    maintainAspectRatio: false,
+    responsive: true,
+  }
 });
 

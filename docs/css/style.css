@@ -388,7 +388,7 @@ body {
   height: 100%;
   width: 15%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   background-color: #000000;
   padding-top: 20px;
@@ -535,6 +535,7 @@ img {
   font-family: "Open Sans", Helvetica, Arial;
   color: #979797;
   width: 85%;
+  z-index: 1;
 }
 
 .top__navigation-icon {
@@ -964,22 +965,6 @@ i {
     display: -ms-flexbox;
     display: flex;
   }
-  .chart__wrapper .chartjs-hidden-frame {
-    line-height: 1.15;
-    box-sizing: border-box;
-    display: block;
-    border: 0px;
-    margin: 0px;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    pointer-events: none;
-    z-index: -1;
-  }
   .chart__wrapper canvas {
     width: 100%;
     height: 100%;
@@ -998,7 +983,7 @@ i {
   .sidenav {
     display: none;
     font-size: 12px;
-    position: relative;
+    position: absolute;
     transform: translateX(0);
     transform: translate3d(0, 0, 0);
   }
@@ -1076,7 +1061,8 @@ i {
   .hamburger:hover {
     background-color: #979797;
   }
-  #wallet.top__navigation-icon, i.icon-notification {
+  #wallet.top__navigation-icon,
+  i.icon-notification {
     display: none;
   }
   .top__navigation-wrapper {
