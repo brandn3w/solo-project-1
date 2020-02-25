@@ -38,6 +38,22 @@
     align-items: baseline;
   }
 }
+.notification {
+i.icon-notification{
+  position: relative;
+}
+.notification-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: $button-color;
+  z-index: 2;
+  position: absolute;
+  top: 24%;
+  right: 317px;
+  }
+}
+
 #wallet,
 #user {
   border-style: solid;

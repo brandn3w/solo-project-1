@@ -562,6 +562,21 @@ img {
       align-items: baseline;
 }
 
+.notification i.icon-notification {
+  position: relative;
+}
+
+.notification .notification-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #F58220;
+  z-index: 2;
+  position: absolute;
+  top: 24%;
+  right: 317px;
+}
+
 #wallet,
 #user {
   border-style: solid;
@@ -815,6 +830,7 @@ i {
 .table-links tr td a {
   text-decoration: none;
   font-weight: normal;
+  color: #9ab3c5;
 }
 
 .table-links tr .links-icon {
@@ -993,6 +1009,9 @@ i {
         align-items: center;
     -ms-grid-column-align: center;
         justify-items: center;
+  }
+  .notification {
+    display: none;
   }
   h1.logo-header {
     font-size: 20px;
