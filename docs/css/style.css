@@ -399,7 +399,7 @@ body {
 .logo-header {
   font-family: "Satisfy", cursive;
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 1.5vw;
   margin-left: 25px;
   padding: 0;
   width: -webkit-fit-content;
@@ -560,6 +560,21 @@ img {
   display: flex;
   -ms-flex-align: baseline;
       align-items: baseline;
+}
+
+.notification i.icon-notification {
+  position: relative;
+}
+
+.notification .notification-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #F58220;
+  z-index: 2;
+  position: absolute;
+  top: 24%;
+  right: 317px;
 }
 
 #wallet,
@@ -815,6 +830,7 @@ i {
 .table-links tr td a {
   text-decoration: none;
   font-weight: normal;
+  color: #9ab3c5;
 }
 
 .table-links tr .links-icon {
@@ -937,6 +953,113 @@ i {
   margin: 50px auto;
 }
 
+/* stylelint-disable */
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.bg-modal .modal-contents {
+  max-width: 50%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  z-index: 1;
+}
+
+.bg-modal .login {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  border-bottom: 0.5px solid #979797;
+  width: 100%;
+}
+
+.bg-modal .login h3 {
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #979797;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.bg-modal .input {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg-modal .input input {
+  margin: 50px;
+  padding: 8px;
+  border: 1px solid #979797;
+  border-radius: 5%;
+  font-family: "Open Sans", Helvetica, Arial;
+  position: relative;
+  text-align: center;
+}
+
+.bg-modal .input .icon-login {
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 6%;
+  color: #979797;
+}
+
+.bg-modal .input .icon-password {
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  color: #979797;
+}
+
+form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.enter-btn {
+  height: 36px;
+  margin: 0 50px 0 0;
+  background-color: #F58220;
+  border: none;
+  border-radius: 5%;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #FFFFFF;
+  padding: 8px 35px;
+  cursor: pointer;
+}
+
+.enter-btn:hover {
+  background-color: #231f1f;
+}
+
+.bg-modal.active {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   #page-container {
     width: 100%;
@@ -984,8 +1107,8 @@ i {
     display: none;
     font-size: 12px;
     position: absolute;
-    transform: translateX(0);
-    transform: translate3d(0, 0, 0);
+    left: -100px;
+    transition: all 300ms ease-out;
   }
   .navigation__header-wrapper {
     font-size: 12;
@@ -994,16 +1117,18 @@ i {
     -ms-grid-column-align: center;
         justify-items: center;
   }
+  .notification {
+    display: none;
+  }
   h1.logo-header {
     font-size: 20px;
   }
   .sidenav.active {
     display: block;
     width: 50%;
-    transition: 300ms ease-out;
-    -webkit-transition: 300ms ease-out;
     transform: translateX(1%);
     -webkit-transform: translate(1%);
+    left: 100px;
   }
   .manager__info {
     -ms-flex-direction: column;

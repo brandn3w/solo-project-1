@@ -48,10 +48,9 @@
     display: none;
     font-size: 12px;
     position: absolute;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    left:-100px;
+    transition: all 300ms ease-out;
+ 
   }
   .navigation__header-wrapper {
     font-size: 12;
@@ -63,17 +62,14 @@
     display:none;
   }
   
-  h1.logo-header {
-    font-size: 20px;
-  }
+
 
   .sidenav.active {
     display: block;
-    width: 50%;
-    transition: 300ms ease-out;
-    -webkit-transition: 300ms ease-out;
+    width: 50%;    
     transform: translateX(1%);
     -webkit-transform: translate(1%);
+    left: 100px;
   }
 
   .manager__info {
