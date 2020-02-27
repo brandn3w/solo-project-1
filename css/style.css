@@ -967,6 +967,7 @@ i {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  display: none;
 }
 
 .modal-contents {
@@ -983,7 +984,7 @@ i {
   z-index: 1;
 }
 
-.login {
+.modal-contents .login {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: start;
@@ -992,15 +993,15 @@ i {
   width: 100%;
 }
 
-h3 {
+.modal-contents h3 {
   font-family: "Open Sans", Helvetica, Arial;
   color: #979797;
   text-transform: uppercase;
   margin: 20px;
 }
 
-input {
-  margin: 50px;
+.modal-contents input {
+  margin: 2vw 1vw 2vw 2vw;
   padding: 8px;
   border: 1px solid #979797;
   border-radius: 5%;
@@ -1009,7 +1010,7 @@ input {
   text-align: center;
 }
 
-.icon-login {
+.modal-contents .icon-login {
   font-size: 20px;
   position: absolute;
   top: 60%;
@@ -1017,15 +1018,15 @@ input {
   color: #979797;
 }
 
-.icon-password {
+.modal-contents .icon-password {
   font-size: 20px;
   position: absolute;
-  top: 60%;
-  left: 47%;
+  top: 62%;
+  left: 45%;
   color: #979797;
 }
 
-form {
+.modal-contents form {
   display: -ms-flexbox;
   display: flex;
   -ms-flex: 1;
@@ -1034,11 +1035,13 @@ form {
       align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
+  -ms-grid-column-align: space-around;
+      justify-items: space-around;
 }
 
-.enter-btn {
+.modal-contents .enter-btn {
   height: 36px;
-  margin: 0 50px 0 0;
+  margin: 2vw 2vw 2vw 1vw;
   background-color: #F58220;
   border: none;
   border-radius: 5%;
@@ -1048,12 +1051,13 @@ form {
   cursor: pointer;
 }
 
-.enter-btn:hover {
+.modal-contents .enter-btn:hover {
   background-color: #231f1f;
 }
 
 .bg-modal.active {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {

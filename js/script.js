@@ -56,3 +56,16 @@ var chart = new Chart(ctx, {
   }
 });
 
+//modal
+
+const modal = document.querySelector('.bg-modal');
+const loginBtn = document.querySelector('.user');
+
+loginBtn.addEventListener('click', function(){
+modal.classList.add('active');
+});
+
+body.addEventListener('click', function(){
+  modal.classList.toggle('active');
+});
+
