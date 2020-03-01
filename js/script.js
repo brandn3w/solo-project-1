@@ -61,11 +61,32 @@ var chart = new Chart(ctx, {
 const modal = document.querySelector('.bg-modal');
 const loginBtn = document.querySelector('.user');
 
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.classList.remove('active');
+  }
+
 loginBtn.addEventListener('click', function(){
 modal.classList.add('active');
 });
 
-body.addEventListener('click', function(){
-  modal.classList.toggle('active');
+}
+
+//sidebar menu
+
+
+var linkContainer =  document.querySelector('.navigation__list');
+var link = linkContainer.getElementsByClassName('.navigation__item');
+
+for (var i=0; i < link.length; i++)
+link[i].addEventListener('click', function(){
+ var activeLink = document.getElementsByClassName('active');
+
+ if (activeLink.length > 0){
+   activeLink[0].className = activeLink[0].replace(' active', '');
+ }
+ this.className += ' active';
 });
+
+
 

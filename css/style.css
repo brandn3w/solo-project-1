@@ -485,6 +485,14 @@ body {
 
 .navigation__item.active {
   border-left: 4px solid orange;
+  color: #FFFFFF;
+  background-color: #231f1f;
+}
+
+.navigation__item.active {
+  border-left: 4px solid orange;
+  color: #FFFFFF;
+  background-color: #231f1f;
 }
 
 img {
@@ -968,6 +976,7 @@ i {
   -ms-flex-align: center;
       align-items: center;
   display: none;
+  cursor: pointer;
 }
 
 .modal-contents {
@@ -1022,7 +1031,7 @@ i {
   font-size: 20px;
   position: absolute;
   top: 62%;
-  left: 45%;
+  left: 42%;
   color: #979797;
 }
 
@@ -1041,7 +1050,7 @@ i {
 
 .modal-contents .enter-btn {
   height: 36px;
-  margin: 2vw 2vw 2vw 1vw;
+  margin: 2vw;
   background-color: #F58220;
   border: none;
   border-radius: 5%;

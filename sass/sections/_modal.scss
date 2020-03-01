@@ -11,6 +11,7 @@ display: flex;
   justify-content: center;
   align-items: center;
  display: none;
+ cursor: pointer;
 }
 
   .modal-contents {
@@ -61,7 +62,7 @@ display: flex;
         font-size: 20px;
         position: absolute;
         top: 62%;
-        left: 45%;
+        left: 42%;
         color: $color-navbar-items;
 
     }
@@ -75,7 +76,7 @@ form {
 }
 .enter-btn {
   height: 36px;
-  margin: 2vw 2vw 2vw 1vw;
+  margin: 2vw;
   background-color: $button-color;
   border: none;
   border-radius: 5%;

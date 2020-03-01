@@ -91,6 +91,14 @@
 
 .navigation__item.active {
   border-left: 4px solid orange;
+  color: $color-light;
+  background-color: $hover-color;
+}
+
+.navigation__item.active {
+  border-left: 4px solid orange;
+  color: $color-light;
+  background-color: $hover-color;
 }
 
 img {
