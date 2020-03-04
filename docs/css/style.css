@@ -400,7 +400,7 @@ body {
   font-family: "Satisfy", cursive;
   color: #FFFFFF;
   font-size: 1.5vw;
-  margin-left: 25px;
+  margin-left: 3vw;
   padding: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -410,12 +410,12 @@ body {
 .hamburger {
   display: inline-block;
   cursor: pointer;
-  margin-left: 40px;
+  margin-left: 2vw;
   margin-bottom: 5px;
 }
 
 .hamburger .bar1, .hamburger .bar2, .hamburger .bar3 {
-  width: 25px;
+  width: 2vw;
   height: 3px;
   background-color: #979797;
   z-index: 1;
@@ -446,7 +446,7 @@ body {
 }
 
 .navigation__item {
-  font-size: 16px;
+  font-size: 1vw;
   font-family: "Open Sans", Helvetica, Arial;
   color: #979797;
   padding: 14px;
@@ -463,7 +463,6 @@ body {
 }
 
 .navigation__manager {
-  font-size: 16px;
   font-family: "Open Sans", Helvetica, Arial;
   color: #FFFFFF;
   text-align: left;
@@ -491,6 +490,8 @@ body {
 
 .navigation__item.active {
   border-left: 4px solid orange;
+  color: #FFFFFF;
+  background-color: #231f1f;
 }
 
 img {
@@ -504,13 +505,14 @@ img {
 }
 
 .manager__name {
-  font-size: 15px;
+  font-size: 0.7vw;
   color: #979797;
   text-transform: uppercase;
   margin: 30px 0;
 }
 
 .manager__info {
+  font-size: 0.7vw;
   text-decoration: none;
   color: #56819f;
   display: -ms-inline-flexbox;
@@ -1089,16 +1091,6 @@ i {
     font-size: 12px;
     overflow: hidden;
   }
-  .chart__wrapper {
-    width: 100%;
-    height: 100%;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .chart__wrapper canvas {
-    width: 100%;
-    height: 100%;
-  }
   .chart__wrapper h3 {
     width: 67%;
     font-family: "Open Sans", Helvetica, Arial;
@@ -1112,31 +1104,55 @@ i {
   }
   .sidenav {
     display: none;
-    font-size: 12px;
-    position: absolute;
+    font-size: 2vw;
     left: -100px;
     transition: all 300ms ease-out;
   }
+  .hamburger .bar1,
+  .hamburger .bar2,
+  .hamburger .bar3 {
+    width: 2vw;
+    height: 2px;
+    background-color: #979797;
+    z-index: 1;
+    margin: 2px;
+  }
   .navigation__header-wrapper {
-    font-size: 12;
+    font-size: 2vw;
     -ms-flex-align: center;
         align-items: center;
-    -ms-grid-column-align: center;
-        justify-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .navigation__item {
+    font-size: 2vw;
+    padding: 5px;
+  }
+  .navigation__manager {
+    padding: 0;
   }
   .notification {
     display: none;
   }
-  .sidenav.active {
-    display: block;
-    width: 50%;
-    transform: translateX(1%);
-    -webkit-transform: translate(1%);
-    left: 100px;
+  .manager__name {
+    text-align: center;
+    font-size: 2vw;
   }
   .manager__info {
     -ms-flex-direction: column;
         flex-direction: column;
+    font-size: 2vw;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .sidenav.active {
+    display: block;
+    width: 30%;
+    transform: translateX(1%);
+    -webkit-transform: translate(1%);
+    left: auto;
   }
   .tbody {
     display: -ms-flexbox;
@@ -1169,19 +1185,18 @@ i {
   .mobile__logo h1.logo-header {
     font-family: "Satisfy", cursive;
     color: #171717;
-    font-size: 17px;
+    font-size: 2vw;
     width: 100%;
     z-index: 1;
   }
   .mobile__hamburger {
     display: inline-block;
-    cursor: pointer;
     margin: 0 0 5px 20px;
   }
   .mobile__hamburger .bar1,
   .mobile__hamburger .bar2,
   .mobile__hamburger .bar3 {
-    width: 20px;
+    width: 2vw;
     height: 2px;
     background-color: #171717;
     z-index: 1;
@@ -1243,10 +1258,18 @@ i {
   }
   .sidenav {
     display: none;
-    font-size: 12px;
+    font-size: 1.5vw;
     position: relative;
     transform: translateX(0);
     transform: translate3d(0, 0, 0);
+  }
+  .sidenav.active {
+    display: block;
+    width: 30%;
+    transition: 300ms ease-out;
+    -webkit-transition: 300ms ease-out;
+    transform: translateX(1%);
+    -webkit-transform: translate(1%);
   }
   .mobile__container {
     display: -ms-flexbox;
@@ -1279,7 +1302,7 @@ i {
   .mobile__hamburger .bar1,
   .mobile__hamburger .bar2,
   .mobile__hamburger .bar3 {
-    width: 20px;
+    width: 1.5vw;
     height: 2px;
     background-color: #171717;
     z-index: 1;
@@ -1294,14 +1317,6 @@ i {
   }
   h1.logo-header {
     font-size: 20px;
-  }
-  .sidenav.active {
-    display: block;
-    width: 50%;
-    transition: 300ms ease-out;
-    -webkit-transition: 300ms ease-out;
-    transform: translateX(1%);
-    -webkit-transform: translate(1%);
   }
   .manager__info {
     -ms-flex-direction: column;
@@ -1356,10 +1371,9 @@ i {
   }
   .sidenav {
     display: none;
-    font-size: 12px;
+    font-size: 2vw;
+    line-height: 3;
     position: relative;
-    transform: translateX(0);
-    transform: translate3d(0, 0, 0);
   }
   .sidenav.active {
     display: block;

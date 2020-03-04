@@ -61,32 +61,36 @@ var chart = new Chart(ctx, {
 const modal = document.querySelector('.bg-modal');
 const loginBtn = document.querySelector('.user');
 
+loginBtn.addEventListener('click', function(){
+  modal.classList.add('active');
+  });
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.classList.remove('active');
   }
 
-loginBtn.addEventListener('click', function(){
-modal.classList.add('active');
-});
+}
+
+//sidebar
+const linkContainer1 =  document.querySelector('.navigation__list');
+const links = linkContainer1.querySelectorAll('.navigation__item');
+
+for(let link of links)
+{
+    link.addEventListener('click', function(){
+
+        let siblings = linkContainer1.querySelector('.navigation__item.active')
+        if(siblings!=null) {
+            siblings.classList.remove('active')
+        }
+        this.classList.add('active')
+        });
 
 }
 
-//sidebar menu
 
 
-var linkContainer =  document.querySelector('.navigation__list');
-var link = linkContainer.getElementsByClassName('.navigation__item');
-
-for (var i=0; i < link.length; i++)
-link[i].addEventListener('click', function(){
- var activeLink = document.getElementsByClassName('active');
-
- if (activeLink.length > 0){
-   activeLink[0].className = activeLink[0].replace(' active', '');
- }
- this.className += ' active';
-});
 
 
 

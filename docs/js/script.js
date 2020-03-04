@@ -72,30 +72,25 @@ modal.classList.add('active');
 
 }
 
-//sidebar menu
+//sidebar
+const linkContainer1 =  document.querySelector('.navigation__list');
+const links = linkContainer1.querySelectorAll('.navigation__item');
 
-const link = document.querySelector('.navigation__list .navigation__item a');
-const linkContainer =  document.querySelector('.navigation__list mobile-menu');
+for(let link of links)
+{
+    link.addEventListener('click', function(){
 
-// link.addEventListener('click', function(){
-// link.classList.toggle('active');
-// });
+        let siblings = linkContainer1.querySelector('.navigation__item.active')
+        if(siblings!=null) {
+            siblings.classList.remove('active')
+        }
+        this.classList.add('active')
+        });
+
+}
 
 
 
-for (var i=0; i < link.length; i++)
-linkContainer[i].addEventListener('click', function(){
 
-  if (link[0].classList.contains('active')) {
-    link.classList.remove('active');
-  }else{  
-  link.classList.add('active');
-};
-//   var activeLink = document.querySelector('.navigation__item.active');
-  
-// if (activeLink) activeLink.classList.remove('active');
-// this.parentNode.classList.add('active');
-// });
 
-})
 
