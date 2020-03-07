@@ -476,6 +476,17 @@ body {
   border-top: 0.5px solid #979797;
 }
 
+.notification-chat {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 2;
+  position: fixed;
+  left: 85px;
+  top: 625px;
+}
+
 .navigation__item:hover {
   border-left: 4px solid orange;
   color: #FFFFFF;
@@ -580,9 +591,9 @@ img {
   border-radius: 50%;
   background-color: #F58220;
   z-index: 2;
-  position: absolute;
-  top: 24%;
-  right: 317px;
+  position: fixed;
+  top: 11px;
+  right: 332px;
 }
 
 #wallet,
@@ -1232,6 +1243,25 @@ i {
   }
 }
 
+form {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.modal-contents .icon-password {
+  font-size: 20px;
+  position: absolute;
+  top: 140px;
+  left: 15px;
+}
+
+.modal-contents .icon-login {
+  font-size: 20px;
+  position: absolute;
+  top: 80px;
+  left: 15px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .page__all-container {
     width: 100%;
@@ -1322,6 +1352,18 @@ i {
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .modal-contents .icon-password {
+    font-size: 20px;
+    position: absolute;
+    top: 160px;
+    left: 15px;
+  }
+  .modal-contents .icon-login {
+    font-size: 15px;
+    position: absolute;
+    top: 88px;
+    left: 15px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -1377,19 +1419,32 @@ i {
     -webkit-transition: 300ms ease-out;
     transform: translateX(1%);
     -webkit-transform: translate(1%);
-    text-align: center;
+    text-align: left;
   }
   .navigation__item {
     font-size: 4vw;
     border-bottom: solid 0.5px #979797;
   }
-  h1.logo-header {
-    font-size: 3vw;
-  }
   .sidenav.active {
     display: block;
     width: 100%;
     left: auto;
+  }
+  form {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .modal-contents .icon-password {
+    font-size: 17px;
+    position: absolute;
+    top: 132px;
+    left: 15px;
+  }
+  .modal-contents .icon-login {
+    font-size: 15px;
+    position: absolute;
+    top: 80px;
+    left: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

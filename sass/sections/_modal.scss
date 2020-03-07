@@ -6,25 +6,23 @@
   height: 100%;
   position: fixed;
   top: 0;
-left:0;
-display: flex;
+  left: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
- display: none;
- cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
-  .modal-contents {
-
-    background-color: white;
-    text-align: center;
-    position: absolute;
-    border-radius: 4px;
-    display: inline-flex;
-    flex-direction: column;
-    align-self: center;
-    z-index: 1;
-  
+.modal-contents {
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  border-radius: 4px;
+  display: inline-flex;
+  flex-direction: column;
+  align-self: center;
+  z-index: 1;
 
   .login {
     display: flex;
@@ -32,64 +30,62 @@ display: flex;
     border-bottom: 0.5px solid $color-navbar-items;
     width: 100%;
   }
-    h3 {
-      font-family: $paragraph-font;
-      color: $color-navbar-items;
-      text-transform: uppercase;
-      margin: 20px;
-    }
-  
-
-    input {
-      margin: 2vw 1vw 2vw 2vw;
-      padding: 8px;
-      border: 1px solid $color-navbar-items;
-      border-radius: 5%;
-      font-family: $paragraph-font;
-      position: relative;
-      text-align: center;
-    }
-
-    .icon-login {
-      font-size: 20px;
-      position: absolute;
-      top: 60%;
-      left: 6%;
-      color: $color-navbar-items;
-    }
-
-    .icon-password {
-        font-size: 20px;
-        position: absolute;
-        top: 62%;
-        left: 42%;
-        color: $color-navbar-items;
-
-    }
-
-form {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  align-self: center;
-  justify-items: space-around;
-}
-.enter-btn {
-  height: 36px;
-  margin: 2vw;
-  background-color: $button-color;
-  border: none;
-  border-radius: 5%;
-  font-family: $brand-font;
-  color: $color-light;
-  padding: 8px 35px;
-  cursor: pointer;
-}
-.enter-btn:hover {
-  background-color: $hover-color;
-}
+  h3 {
+    font-family: $paragraph-font;
+    color: $color-navbar-items;
+    text-transform: uppercase;
+    margin: 20px;
   }
 
-  .bg-modal.active{
+  input {
+    margin: 2vw 1vw 2vw 2vw;
+    padding: 8px;
+    border: 1px solid $color-navbar-items;
+    border-radius: 5%;
+    font-family: $paragraph-font;
+    position: relative;
+    text-align: center;
+  }
+
+  .icon-login {
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 6%;
+    color: $color-navbar-items;
+  }
+
+  .icon-password {
+    font-size: 20px;
+    position: absolute;
+    top: 62%;
+    left: 42%;
+    color: $color-navbar-items;
+  }
+
+  form {
     display: flex;
+    flex: 1;
+    align-items: center;
+    align-self: center;
+    justify-items: space-around;
   }
+  .enter-btn {
+    height: 36px;
+    margin: 2vw;
+    background-color: $button-color;
+    border: none;
+    border-radius: 5%;
+    font-family: $brand-font;
+    color: $color-light;
+    padding: 8px 35px;
+    cursor: pointer;
+  }
+  .enter-btn:hover {
+    background-color: $hover-color;
+  }
+}
+
+.bg-modal.active {
+  display: flex;
+}

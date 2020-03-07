@@ -580,9 +580,9 @@ img {
   border-radius: 50%;
   background-color: #F58220;
   z-index: 2;
-  position: absolute;
-  top: 24%;
-  right: 317px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #wallet,
@@ -1370,18 +1370,23 @@ i {
     display: none;
   }
   .sidenav {
-    display: none;
-    font-size: 2vw;
+    left: -100%;
     line-height: 3;
     position: relative;
-  }
-  .sidenav.active {
-    display: block;
-    width: 100%;
     transition: 300ms ease-out;
     -webkit-transition: 300ms ease-out;
     transform: translateX(1%);
     -webkit-transform: translate(1%);
+    text-align: left;
+  }
+  .navigation__item {
+    font-size: 4vw;
+    border-bottom: solid 0.5px #979797;
+  }
+  .sidenav.active {
+    display: block;
+    width: 100%;
+    left: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

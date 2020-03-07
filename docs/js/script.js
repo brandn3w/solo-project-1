@@ -61,14 +61,14 @@ var chart = new Chart(ctx, {
 const modal = document.querySelector('.bg-modal');
 const loginBtn = document.querySelector('.user');
 
+loginBtn.addEventListener('click', function(){
+  modal.classList.add('active');
+  });
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.classList.remove('active');
   }
-
-loginBtn.addEventListener('click', function(){
-modal.classList.add('active');
-});
 
 }
 
