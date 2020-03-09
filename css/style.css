@@ -1030,19 +1030,19 @@ i {
   text-align: center;
 }
 
-.modal-contents .icon-login {
+.modal-contents .modal-contents .icon-login {
   font-size: 20px;
   position: absolute;
-  top: 60%;
-  left: 6%;
+  top: 110px;
+  left: 30px;
   color: #979797;
 }
 
-.modal-contents .icon-password {
+.modal-contents .modal-contents .icon-password {
   font-size: 20px;
   position: absolute;
-  top: 62%;
-  left: 42%;
+  top: 110px;
+  left: 300px;
   color: #979797;
 }
 
@@ -1051,6 +1051,8 @@ i {
   display: flex;
   -ms-flex: 1;
       flex: 1;
+  -ms-flex-direction: row;
+      flex-direction: row;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-item-align: center;
@@ -1080,7 +1082,7 @@ i {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 376px) and (max-width: 767px) {
   #page-container {
     width: 100%;
   }
@@ -1355,13 +1357,13 @@ form {
   .modal-contents .icon-password {
     font-size: 20px;
     position: absolute;
-    top: 160px;
+    top: 165px;
     left: 15px;
   }
   .modal-contents .icon-login {
     font-size: 15px;
     position: absolute;
-    top: 88px;
+    top: 90px;
     left: 15px;
   }
 }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 376px) and (max-width: 767px) {
   #page-container {
     width: 100%;
   }
@@ -296,14 +296,14 @@ form {
   .modal-contents .icon-password {
     font-size: 20px;
     position: absolute;
-    top: 160px;
+    top: 165px;
     left: 15px;
   }
 
   .modal-contents .icon-login {
     font-size: 15px;
     position: absolute;
-    top: 88px;
+    top: 90px;
     left: 15px;
   }
 }

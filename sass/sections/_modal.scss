@@ -47,25 +47,26 @@
     text-align: center;
   }
 
-  .icon-login {
+  .modal-contents .icon-login {
     font-size: 20px;
     position: absolute;
-    top: 60%;
-    left: 6%;
+    top: 110px;
+    left: 30px;
     color: $color-navbar-items;
   }
 
-  .icon-password {
+  .modal-contents .icon-password {
     font-size: 20px;
     position: absolute;
-    top: 62%;
-    left: 42%;
+    top: 110px;
+    left: 300px;
     color: $color-navbar-items;
   }
 
   form {
     display: flex;
     flex: 1;
+    flex-direction: row;
     align-items: center;
     align-self: center;
     justify-items: space-around;
