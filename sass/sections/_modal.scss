@@ -17,7 +17,7 @@
 .modal-contents {
   background-color: white;
   text-align: center;
-  position: absolute;
+  position: relative;
   border-radius: 4px;
   display: inline-flex;
   flex-direction: column;
@@ -47,29 +47,30 @@
     text-align: center;
   }
 
-  .modal-contents .icon-login {
+   i.icon-login {
     font-size: 20px;
     position: absolute;
-    top: 110px;
-    left: 30px;
+    top: auto;
+    left: 35px;
     color: $color-navbar-items;
   }
 
-  .modal-contents .icon-password {
-    font-size: 20px;
+  i.icon-password {
     position: absolute;
-    top: 110px;
+    font-size: 20px;
     left: 300px;
+    top: auto;
     color: $color-navbar-items;
   }
 
   form {
+    position: relative;
     display: flex;
     flex: 1;
     flex-direction: row;
     align-items: center;
     align-self: center;
-    justify-items: space-around;
+    justify-content: space-around;
   }
   .enter-btn {
     height: 36px;
@@ -90,3 +91,5 @@
 .bg-modal.active {
   display: flex;
 }
+
+

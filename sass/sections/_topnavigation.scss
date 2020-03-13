@@ -38,7 +38,10 @@
     align-items: baseline;
   }
 }
+
 .notification {
+  position: relative;
+
 i.icon-notification{
   position: relative;
 }
@@ -48,9 +51,9 @@ i.icon-notification{
   border-radius: 50%;
   background-color: $button-color;
   z-index: 2;
-  position: fixed;
-  top: 11px;
-  right: 332px;
+  position: absolute;
+  top: -2px;
+  right: 20px;
   }
 }
 

@@ -1,3 +1,128 @@
+@media screen and (min-width: 1025px) and (max-width: 1253px) {
+
+  .modal-contents i.icon-password {
+    left: 258px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .page__all-container {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .top {
+    &__navigation-wrapper {
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+    }
+    &__navigation-icon {
+      font-size: 12px;
+    }
+  }
+
+  .general__container {
+    margin: 59px 18px 0 18px;
+  }
+
+  .sidenav {
+    display: none;
+    font-size: 1.5vw;
+    position: relative;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .sidenav.active {
+    display: block;
+    width: 30%;
+    transition: 300ms ease-out;
+    -webkit-transition: 300ms ease-out;
+    transform: translateX(1%);
+    -webkit-transform: translate(1%);
+  }
+
+  .mobile {
+    &__container {
+      display: flex;
+      justify-content: flex-start;
+      top: 0;
+      left: 0;
+    }
+    &__logo {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      color: $color-dark;
+
+      h1.logo-header {
+        font-family: $logo-font;
+        color: $color-dark;
+        font-size: 17px;
+
+        width: 100%;
+        z-index: 1;
+      }
+    }
+
+    &__hamburger {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0 0 5px 20px;
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 1.5vw;
+        height: 2px;
+        background-color: $color-dark;
+        z-index: 1;
+        margin: 4px;
+      }
+    }
+  }
+
+  .navigation__header-wrapper {
+    font-size: 12;
+    align-items: center;
+    justify-items: center;
+  }
+
+  h1.logo-header {
+    font-size: 20px;
+  }
+
+  .manager__info {
+    flex-direction: column;
+  }
+
+  .modal-contents form {
+    position: relative;
+  }
+
+  .modal-contents i.icon-password {
+    position: absolute;
+    left: 250px;
+    top: 27px;
+    color: $color-navbar-items;
+  }
+
+  .modal-contents i.icon-login {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    color: $color-navbar-items;
+  }
+}
+
 @media screen and (min-width: 376px) and (max-width: 767px) {
   #page-container {
     width: 100%;
@@ -174,141 +299,51 @@
     width: 100%;
     margin: 10px 0;
   }
-}
 
-form {
-  flex-direction: column;
-}
-
-.modal-contents .icon-password {
-  font-size: 20px;
-  position: absolute;
-  top: 140px;
-  left: 15px;
-}
-
-.modal-contents .icon-login {
-  font-size: 20px;
-  position: absolute;
-  top: 80px;
-  left: 15px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .page__all-container {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .top {
-    &__navigation-wrapper {
-      width: 100%;
-      justify-content: space-around;
-      flex-direction: row;
-      align-items: center;
-    }
-    &__navigation-icon {
-      font-size: 12px;
-    }
-  }
-
-  .general__container {
-    margin: 59px 18px 0 18px;
-  }
-
-  .sidenav {
-    display: none;
-    font-size: 1.5vw;
+  .modal-contents form {
     position: relative;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  .sidenav.active {
-    display: block;
-    width: 30%;
-    transition: 300ms ease-out;
-    -webkit-transition: 300ms ease-out;
-    transform: translateX(1%);
-    -webkit-transform: translate(1%);
-  }
-
-  .mobile {
-    &__container {
-      display: flex;
-      justify-content: flex-start;
-      top: 0;
-      left: 0;
-    }
-    &__logo {
-      width: 100%;
-      display: inline-flex;
-      align-items: center;
-      color: $color-dark;
-
-      h1.logo-header {
-        font-family: $logo-font;
-        color: $color-dark;
-        font-size: 17px;
-
-        width: 100%;
-        z-index: 1;
-      }
-    }
-
-    &__hamburger {
-      display: inline-block;
-      cursor: pointer;
-      margin: 0 0 5px 20px;
-
-      .bar1,
-      .bar2,
-      .bar3 {
-        width: 1.5vw;
-        height: 2px;
-        background-color: $color-dark;
-        z-index: 1;
-        margin: 4px;
-      }
-    }
-  }
-
-  .navigation__header-wrapper {
-    font-size: 12;
-    align-items: center;
-    justify-items: center;
-  }
-
-  h1.logo-header {
-    font-size: 20px;
-  }
-
-  .manager__info {
     flex-direction: column;
   }
 
-  .modal-contents .icon-password {
+  .modal-contents i.icon-password {
     font-size: 20px;
     position: absolute;
-    top: 165px;
+    top: 78px;
     left: 15px;
+    color: $color-navbar-items;
   }
 
-  .modal-contents .icon-login {
-    font-size: 15px;
+  .modal-contents i.icon-login {
+    font-size: 20px;
     position: absolute;
-    top: 90px;
+    top: 20px;
     left: 15px;
+    color: $color-navbar-items;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
+  html {
+    width: fit-content;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  #page-container {
+    width: 100%;
+  }
+
+  .page__all-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .top__navigation-wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+
   .mobile {
     &__container {
       display: flex;
@@ -356,9 +391,8 @@ form {
   }
 
   .sidenav {
-    left: -100%;
+    display: none;
     line-height: 3;
-
     position: relative;
     transition: 300ms ease-out;
     -webkit-transition: 300ms ease-out;
@@ -379,21 +413,24 @@ form {
     left: auto;
   }
 
-  form {
+  .modal-contents form {
+    position: relative;
     flex-direction: column;
   }
 
-  .modal-contents .icon-password {
+  .modal-contents i.icon-password {
     font-size: 17px;
     position: absolute;
-    top: 132px;
-    left: 15px;
+    left: 3px;
+    top: 67px;
+    z-index: 1;
   }
 
-  .modal-contents .icon-login {
+  .modal-contents i.icon-login {
     font-size: 15px;
     position: absolute;
-    top: 80px;
-    left: 15px;
+    left: 3px;
+    top: 15px;
+    z-index: 1;
   }
 }
